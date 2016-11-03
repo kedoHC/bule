@@ -1,0 +1,321 @@
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+a:link{
+	text-decoration: none;
+}
+/*<!-- ***************************
+************* Logo *************
+******************************-->*/
+#logo{
+	margin-top: 20px;
+	color: #EF4135;
+	font-weight: bold;
+	font-size: 18px;
+}
+#logo .text-logo-1, #logo .text-logo-2 {
+	padding-top: 70px;
+}
+#logo .text-logo-1 p:first-child, #logo .text-logo-2 p:first-child{
+	padding-top: 10px;
+	border-top: 1px solid #EF4135;
+}
+#logo .text-logo-1 p:last-child, #logo .text-logo-2 p:last-child{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #EF4135;
+}
+#logo .text-logo-1 p{
+	margin-bottom: 0px;
+	margin-bottom: 0px;
+	text-align: right;
+}
+#logo .text-logo-2 p{
+	margin-bottom: 0px;
+	margin-bottom: 0px;
+	text-align: left;
+} 
+/*<!-- ***************************
+************* Menu *************
+******************************-->*/
+#sello img{
+	
+	float: right;
+	position: absolute;
+	z-index: 1;
+}
+#menu{
+	height: 50px;
+	text-align: center;
+	margin-top: 20px;
+	/*background-color: #eee;*/
+}
+#menu .menu-item{
+	color: #EF4135;
+	font-size: 20px;
+	padding: 0px;
+	padding-top: 5px; 
+	font-weight: bold;
+}
+#menu .menu-item a{
+	color: #EF4135;
+}
+#menu .menu-item:hover{
+	color: #EF4135;
+	border-top: 5px solid #EF4135;	
+}
+/*<!-- ***************************
+****** Imagen Parallax 1**********
+******************************-->*/
+.parallax-1{
+  /* The image used */
+    background-image: url("../img/paralax1-1.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*<!-- ***************************
+****** La cocina Titulo **********
+******************************-->*/
+#la-cocina-titulo{
+	background-color: #215A9E;
+}
+#la-cocina-titulo h1{
+	color: #fff;
+	font-size: 45px;
+	font-weight: bold;
+}
+/*<!-- ***************************
+****** La cocina sellos **********
+******************************-->*/
+#sellos{
+	height: 400px;
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+#sellos p{
+	margin-top: 30px;
+	text-align: center;
+	color: #215A9E;
+	font-size: 18px;
+	font-weight: bold;
+}
+/*<!-- ***************************
+****** Imagen Parallax 2**********
+******************************-->*/
+.parallax-2{
+  /* The image used */
+    background-image: url("../img/paralax2-2.jpeg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-2 h1, .parallax-2 h2{
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Fjalla One', sans-serif;
+}
+.parallax-2 h2{
+	font-family: 'Great Vibes', cursive;
+}
+.parallax-2 #linea1{
+	padding-top: 150px;
+}
+/*<!-- ***************************
+****** Que hay nuevo titulo *******
+******************************-->*/
+#nuevo-titulo{
+	background-color: #215A9E;
+}
+#nuevo-titulo h1{
+	color: #fff;
+	font-size: 45px;
+	font-weight: bold;
+}
+/*<!-- ***************************
+******** Que hay nuevo ************
+******************************-->*/
+#nuevo{
+	color: #EF4135;
+}
+#nuevo-2, #nuevo-3, #nuevo-1, #nuevo-4{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;	
+}
+#nuevo .row{
+	border-bottom: 2px solid #EF4135;
+}
+#nuevo-1 h2, #nuevo-4 h2, #nuevo-5 h2{
+	font-weight: bold;
+}
+#nuevo-1 h2:first-child, 
+#nuevo-4 h2:first-child, 
+#nuevo-5 h2:first-child{
+	margin-top: 50px;
+}
+#nuevo-1 p, #nuevo-4 p, #nuevo-5 p{
+	margin-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+#nuevo-1 button, 
+#nuevo-4 button,
+#nuevo-5 button{
+	margin-top: 30px;
+	width: 150px;
+	border: 3px solid #EF4135;
+	box-shadow: none;
+	border-radius: 0px;
+	color: #EF4135;
+}
+.producto{
+	font-family: 'Great Vibes', cursive;
+}
+/*<!-- ***************************
+****** Que hay nuevo titulo *******
+******************************-->*/
+#galeria-titulo{
+	background-color: #215A9E;
+}
+#galeria-titulo h1{
+	color: #fff;
+	font-size: 45px;
+	font-weight: bold;
+}
+/*<!-- ***************************
+*********** Contacto *************
+******************************-->*/
+#contacto{
+	background-color: #215A9E; 
+	color: #fff;
+	padding-bottom: 50px;
+}
+#contacto h1{
+	font-weight: bold;
+	text-align: center;
+	font-size: 45px;
+}
+#contacto h3{
+	font-weight: bold;
+	margin-top: 0px;
+	padding-top: 0px;
+	font-size: 30px;
+}
+#contacto input[type = "email"]{
+	font-size: 20px;
+	margin-top: 15px;
+	border: none;
+	background-color: #fff;
+	color: #262525;
+	text-align: center;
+	width: 300px;
+	height: 40px;
+
+}
+#contacto input[type = "submit"]{
+	border-radius: 0px;
+	width: 100px;
+	color: #215A9E; 
+	margin-top: 15px;
+	width: 150px;
+	height: 40px;
+	font-size: 20px;
+}
+/*<!-- ***************************
+************* pie ****************
+******************************-->*/
+#pie{
+	padding-top: 20px;
+	color: #215A9E;
+}
+@media (max-width: 749px) { 
+	/*Login de inicio movil*/
+	.parallax-1{
+		height: 550px;
+	}
+	.parallax-1 img{
+		margin-top: 50px;
+	}
+	.parallax-1 input[type="text"]{
+		margin-top: 50px;
+	}
+	.parallax-1 input[type="text"],
+	.parallax-1 input[type="password"]{
+		width: 200px;
+		height: 40px;
+		background-color: #262525;
+		color: #fff;
+		border:none;
+		text-align: center;
+		font-size: 25px;
+	}
+	.parallax-1 p{
+		color: #fff;
+		font-size: 18px;
+		margin-top: 30px;
+	}
+	.parallax-1 input[type="submit"]{
+		width: 200px;
+		height: 40px;
+		background-color: #215A9E;
+		color: #fff;
+		border:none;
+		text-align: center;
+		font-size: 25px;
+		margin-top: 10px;
+	}
+	/*Titulo ¿Qué hay de nuevo?*/
+	#nuevo-titulo h1{
+		font-size: 30px;
+	}
+	/*Productos nuevos*/
+	#nuevo button{
+		margin-bottom: 50px;
+	}
+	/*contacto*/
+	#contacto{
+		text-align: center;
+	}
+	#contacto h1{
+		font-size: 30px;
+	}
+	#contacto h3{
+		font-size: 20px;
+	}
+	/*pie*/
+	#pie{
+		background-color: #215A9E;
+		color: #fff;
+	}
+}
+@media (min-width: 750px) and (max-width: 969px) {
+	.parallax-2{
+		height: 400px;
+	}
+	/*Productos nuevos*/
+	#nuevo button{
+		margin-bottom: 50px;
+	}
+	#nuevo img{
+		margin-top: 60px;
+	}
+	#contacto{
+		text-align: center;
+	}
+	#pie{
+		background-color: #215A9E;
+		color: #fff;
+	}
+}
