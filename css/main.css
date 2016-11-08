@@ -240,20 +240,176 @@ a:link{
 	padding-top: 20px;
 	color: #215A9E;
 }
-@media (max-width: 749px) { 
+/*<!-- ***************************
+********** log-usuario *********
+******************************-->*/
+.parallax-1 h1{
+	color: #fff;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+#login-form,
+#registro-form{
+	cursor: pointer;
+}
+.titulo-activo{
+	color: #ef4135;
+}
+.parallax-1 input[type="text"]{
+	margin-top: 50px;
+}
+.parallax-1 input[type="text"],
+.parallax-1 input[type="email"],
+.parallax-1 input[type="password"]{
+	width: 300px;
+	height: 40px;
+	background-color: #262525;
+	color: #fff;
+	border:none;
+	text-align: center;
+	font-size: 25px;
+}
+.parallax-1 p{
+	color: #fff;
+	font-size: 18px;
+	margin-top: 30px;
+}
+.parallax-1 input[type="submit"]{
+	width: 300px;
+	height: 40px;
+	background-color: #215A9E;
+	color: #fff;
+	border:none;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 10px;
+}
+#formulario-registro input{
+	margin-top: 5px;
+}
+
+#formulario-registro input[type="email"]{
+	margin-bottom: 0px;
+}
+#formulario-registro input[type="submit"]{
+	margin-bottom: 70px;
+}
+/*Menu de alimentos*/
+#menu-alimentos{
+	margin-top: 50px;
+	height: 50px;
+	color: #ef4135;
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+#menu-alimentos .menu-alimentos-item:hover{
+	background-color: #ef4135;
+	color: #fff;
+	cursor: pointer;
+}
+.menu-alimentos-activo{
+	background-color: #ef4135;
+	color: #fff;
+	cursor: pointer;
+}
+#contenedor-hamburguesas .nombre-producto,
+#contenedor-hotdogs .nombre-producto,
+#contenedor-bebidas .nombre-producto,
+#contenedor-varios .nombre-producto{
+	cursor: pointer;
+}
+#contenedor-hamburguesas .nombre-producto span,
+#contenedor-hotdogs .nombre-producto span, 
+#contenedor-bebidas .nombre-producto span,
+#contenedor-varios .nombre-producto span{
+	color: #ef4135;
+}
+#contenedor-hamburguesas .nombre-producto:hover,
+#contenedor-hotdogs .nombre-producto:hover,
+#contenedor-bebidas .nombre-producto:hover,
+#contenedor-varios .nombre-producto:hover{
+	border-bottom: 5px solid #215A9E;
+}
+#ingredientes span{
+	color: #ef4135;
+	font-family: 'Great Vibes', cursive;
+}
+.agregarcarrito button{
+	background-color: #fff;
+	border: 2px solid #ef4135;
+	width: 200px;
+	height: 30px;
+	font-weight: bold;
+}
+@media (max-width: 749px) {
+	/*Menu movil index*/
+	.menu-movil{
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+	.menu-movil .mensaje{
+		font-size: 30px;
+		margin: 0;
+		font-family: 'Open Sans Condensed', sans-serif;
+
+	}
+	.menu-movil .hashtag{
+		font-size: 30px;
+		margin: 10 0;
+		color: #ef4135;
+	}
+	.menu-movil .hashtag span{
+		color: #ef4135;
+		font-family: 'Great Vibes', cursive;
+		margin-bottom: 0px;
+	}
+	.menu-movil .icono-movil{
+		
+		border-top: 2px solid #000;
+		border-bottom: 2px solid #000;
+		border-right: 1px solid #000;
+
+		padding: 10px;
+		color: #fff;
+		margin: 0;
+		background-color: #262525;
+		opacity: 0.7;
+		padding-top: 0px;
+	}
+	.menu-movil .icono-movil span{
+		font-size: 30px;
+		color: #eee;
+	}
+	.menu-movil .icono-movil .lo-nuevo{
+		color: yellow;
+		 -webkit-animation-delay: 2s;
+		  -moz-animation-delay: 2s;
+  		-webkit-animation-iteration-count: 3;
+  		-moz-animation-iteration-count: 3;
+	}
 	/*Login de inicio movil*/
 	.parallax-1{
 		height: 550px;
 	}
+	.parallax-1 h1{
+		font-size: 30px;
+	}
 	.parallax-1 img{
-		margin-top: 50px;
+		margin-top: 10px;
+	}
+	#img-logo-movil{
+		margin-top: 30px;
 	}
 	.parallax-1 input[type="text"]{
 		margin-top: 50px;
 	}
 	.parallax-1 input[type="text"],
-	.parallax-1 input[type="password"]{
-		width: 200px;
+	.parallax-1 input[type="password"],
+	.parallax-1 input[type="email"]{
+		width: 100%;
 		height: 40px;
 		background-color: #262525;
 		color: #fff;
@@ -267,7 +423,7 @@ a:link{
 		margin-top: 30px;
 	}
 	.parallax-1 input[type="submit"]{
-		width: 200px;
+		width: 100%;
 		height: 40px;
 		background-color: #215A9E;
 		color: #fff;
@@ -275,6 +431,7 @@ a:link{
 		text-align: center;
 		font-size: 25px;
 		margin-top: 10px;
+		margin-bottom: 50px;
 	}
 	/*Titulo ¿Qué hay de nuevo?*/
 	#nuevo-titulo h1{
