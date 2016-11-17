@@ -1,4 +1,5 @@
-<?php include "../inc/cabecera_pages.inc"; ?>
+<?php include "../inc/cabecera_pages.inc"; 
+session_start();?>
 <div id="menu" class="hidden-xs">
     <div class="container">
       <div class="row">
@@ -6,19 +7,19 @@
           <img class="img-responsive" src="../img/sello.png">
         </div>
         <div class="menu-item col-xs-2">
-        <a href="../index.php#nuevo-titulo"><p>Novedades</p></a>
+        <a href="menu_user.php#nuevo-titulo"><p>Novedades</p></a>
         </div>
-        <div id="menu-lacocina" class="menu-item col-xs-2">
-        <a href="../index.php#la-cocina-titulo"><p>La cocina</p></a>
+        <div class="menu-item col-xs-2">
+        <a href="menu_user.php#nuevo-titulo"><p>La cocina</p></a>
         </div>
-        <div id="menu-menu" class="menu-item col-xs-2">
-        <a href="menu.php"><p>Menu</p></a>
+        <div class="menu-item col-xs-2">
+        <a href="menu_user.php#nuevo-titulo"><p>Menu</p></a>
         </div>
-        <div id="menu-ordenaronline" class="menu-item col-xs-2">
-        <a href="log_usuario.php"><p>Ordenar online</p></a>
+        <div class="menu-item col-xs-2">
+        <a href="menu_user.php#nuevo-titulo"><p>Ordenar online</p></a>
         </div>
-        <div id="menu-contacto" class="menu-item col-xs-2">
-        <a href="#"><p>Contacto</p></a>
+        <div class="menu-item col-xs-2">
+        <a href="menu_user.php#contacto"><p>Contacto</p></a>
         </div>
       </div>
     </div>
@@ -31,6 +32,19 @@
         </div>
       </div>
     </div>
+  </div>
+  <div id="carrito">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-xs-6"></div>
+  			<div class="col-xs-5 carrito">
+        		<a href="micarrito.php"><h3 class="text-right" style="color: #215a9e;"><span style="color: #ef4135" class="fa fa-shopping-cart"></span> Mi compra:<span style="color: #ef4135; font-weight: bold;"> <?php echo $_SESSION["num_productos"]; ?> </span><span> bules.</span> ID Pedido: <span style="color: #ef4135; font-weight: bold;"><?php echo $_SESSION["id_registro"]; ?></span></h3></a>
+        	</div>
+        	<div class="col-xs-1">
+        		<a href="salir.php"><h3>Salir</h3></a>
+        	</div>
+  		</div>
+  	</div>
   </div>
 <div id="menu-alimentos">
 	<div class="container">
@@ -53,7 +67,7 @@
 <div id="contenedor-hamburguesas">
 	<div class="container">
 		<div class="col-xs-3">
-			<h2 id="bule-h0" class="nombre-producto">DeepBule <span>$60.00</span> <span style="font-size: 25px; color: blue;" class="animated flash label-nuevo">  ¡Nuevo!</span></h2>
+			<h2 id="bule-h0" class="nombre-producto">DeepBule <span>$60.00</span><span style="font-size: 25px; color: blue;" class="animated flash label-nuevo">  ¡Nuevo!</span></h2>
 			<h2 id="bule-h1" class="nombre-producto">MasterMeet <span>$70.00</span></h2>
 			<h2 id="bule-h2" class="nombre-producto">La Brava <span>$65.00</span></h2>
 			<h2 id="bule-h3" class="nombre-producto">BuleBuilding <span>$60.00</span></h2>
@@ -62,17 +76,17 @@
 		</div>
 		<div id="ingredientes" class="col-xs-3">
 			<h2 id="ingredientes-h0" class="text-center"><span>DeepBule</span> una receta original de El Bule cuenta con los mejores ingredientes: Adereso, carne suprema, lechuga, tomate, cebolla e ingredientes propios de la marca. </h2>
-			<a id="producto0" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto0" class="agregarcarrito" href="agregarcarrito.php?id_producto=1"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-h1" class="text-center">Para los amantes de la carne, <span>MasterMeet</span>, una hamburguesa con los mejores cortes de carne, lechuga, tomate y aderezo marca <span>El Bule</span></h2>
-			<a id="producto1" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto1" class="agregarcarrito" href="agregarcarrito.php?id_producto=2"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-h2" class="text-center">La mejor hamburguesa Tex-Mex del norte del pais: <span>La Brava</span>, es traida para los paladares mas atrevidos del picante y los sabores del norte del pais. Unica en el estado de Guanajuato.</h2>
-			<a id="producto2" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto2" class="agregarcarrito" href="agregarcarrito.php?id_producto=3"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-h3" class="text-center"><span>BuleBuilding</span>. Una estructura de 3 pisos que rompera tu sentido del gusto: cebolla, tomate, aderezos y champiñones seran los cimientos de este monumento de carne.</h2>
-			<a id="producto3" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto3" class="agregarcarrito" href="agregarcarrito.php?id_producto=4"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-h4" class="text-center">Porque lo verde siempre es bueno, <span>GreenBurguer</span> una combinación de pollo y carne en perfecta armonia con vegetales frescos. Garantia <span>El Bule</span>.</h2>
-			<a id="producto4" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto4" class="agregarcarrito" href="agregarcarrito.php?id_producto=5"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-h5" class="text-center"><span>BuleX</span> una receta original de El Bule cuenta con los mejores ingredientes: Adereso, carne suprema, lechuga, tomate, cebolla e ingredientes propios de la marca.</h2>
-			<a id="producto5" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto5" class="agregarcarrito" href="agregarcarrito.php?id_producto=6"><button class="center-block">Agregar a mi orden</button></a>
 		</div>
 		<div class="col-xs-6">
 			<img id="img-bule-h0" class="img-responsive center-block" src="../img/galeria-1.jpg">
@@ -96,17 +110,17 @@
 		</div>
 		<div id="ingredientes" class="col-xs-3">
 			<h2 id="ingredientes-hd0" class="text-center"><span>DeepBuleHotdog</span> una receta original de El Bule cuenta con los mejores ingredientes: Adereso, carne suprema, lechuga, tomate, cebolla e ingredientes propios de la marca. </h2>
-			<a id="producto0hd" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto0hd" class="agregarcarrito" href="agregarcarrito.php?id_producto=7"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-hd1" class="text-center">Para los amantes de la carne, <span>MasterHD</span>, una hamburguesa con los mejores cortes de carne, lechuga, tomate y aderezo marca <span>El Bule</span></h2>
-			<a id="producto1hd" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto1hd" class="agregarcarrito" href="agregarcarrito.php?id_producto=8"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-hd2" class="text-center">La mejor hamburguesa Tex-Mex del norte del pais: <span>El Barrio</span>, es traida para los paladares mas atrevidos del picante y los sabores del norte del pais. Unica en el estado de Guanajuato.</h2>
-			<a id="producto2hd" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto2hd" class="agregarcarrito" href="agregarcarrito.php?id_producto=9"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-hd3" class="text-center"><span>The Bridge</span>. Una estructura de 3 pisos que rompera tu sentido del gusto: cebolla, tomate, aderezos y champiñones seran los cimientos de este monumento de carne.</h2>
-			<a id="producto3hd" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto3hd" class="agregarcarrito" href="agregarcarrito.php?id_producto=10"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-hd4" class="text-center">Porque lo verde siempre es bueno, <span>HotGreen</span> una combinación de pollo y carne en perfecta armonia con vegetales frescos. Garantia <span>El Bule</span>.</h2>
-			<a id="producto4hd" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto4hd" class="agregarcarrito" href="agregarcarrito.php?id_producto=11"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-hd5" class="text-center"><span>HotDogLeon</span> una receta original de El Bule cuenta con los mejores ingredientes: Adereso, carne suprema, lechuga, tomate, cebolla e ingredientes propios de la marca.</h2>
-			<a id="producto5hd" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto5hd" class="agregarcarrito" href="agregarcarrito.php?id_producto=12"><button class="center-block">Agregar a mi orden</button></a>
 		</div>
 		<div class="col-xs-6">
 			<img id="img-bule-hd0" class="img-responsive center-block" src="../img/hot-dog-0.jpg">
@@ -130,17 +144,17 @@
 		</div>
 		<div id="ingredientes" class="col-xs-3">
 			<h2 id="ingredientes-b0" class="text-center"><span>AguasBule</span> una receta original de El Bule cuenta con los mejores ingredientes: Adereso, carne suprema, lechuga, tomate, cebolla e ingredientes propios de la marca. </h2>
-			<a id="producto0b" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto0b" class="agregarcarrito" href="agregarcarrito.php?id_producto=13"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-b1" class="text-center">Para los amantes de la carne, <span>RefrescoDeRaiz</span>, una hamburguesa con los mejores cortes de carne, lechuga, tomate y aderezo marca <span>El Bule</span></h2>
-			<a id="producto1b" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto1b" class="agregarcarrito" href="agregarcarrito.php?id_producto=14"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-b2" class="text-center">La mejor hamburguesa Tex-Mex del norte del pais: <span>Refresco</span>, es traida para los paladares mas atrevidos del picante y los sabores del norte del pais. Unica en el estado de Guanajuato.</h2>
-			<a id="producto2b" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto2b" class="agregarcarrito" href="agregarcarrito.php?id_producto=15"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-b3" class="text-center"><span>Jugos</span>. Una estructura de 3 pisos que rompera tu sentido del gusto: cebolla, tomate, aderezos y champiñones seran los cimientos de este monumento de carne.</h2>
-			<a id="producto3b" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto3b" class="agregarcarrito" href="agregarcarrito.php?id_producto=16"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-b4" class="text-center">Porque lo verde siempre es bueno, <span>CervezaAlemana</span> una combinación de pollo y carne en perfecta armonia con vegetales frescos. Garantia <span>El Bule</span>.</h2>
-			<a id="producto4b" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto4b" class="agregarcarrito" href="agregarcarrito.php?id_producto=17"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-b5" class="text-center"><span>CervezaNacional</span> una receta original de El Bule cuenta con los mejores ingredientes: Adereso, carne suprema, lechuga, tomate, cebolla e ingredientes propios de la marca.</h2>
-			<a id="producto5b" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto5b" class="agregarcarrito" href="agregarcarrito.php?id_producto=18"><button class="center-block">Agregar a mi orden</button></a>
 		</div>
 		<div class="col-xs-6">
 			<img id="img-bule-b0" class="img-responsive center-block" src="../img/bebidas-0.jpg">
@@ -164,17 +178,17 @@
 		</div>
 		<div id="ingredientes" class="col-xs-3">
 			<h2 id="ingredientes-v0" class="text-center"><span>PapasBuleCheese</span> una receta original de El Bule cuenta con los mejores ingredientes: Adereso, carne suprema, lechuga, tomate, cebolla e ingredientes propios de la marca. </h2>
-			<a id="producto0v" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto0v" class="agregarcarrito" href="agregarcarrito.php?id_producto=19"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-v1" class="text-center">Para los amantes de la carne, <span>PapasEnGajos</span>, una hamburguesa con los mejores cortes de carne, lechuga, tomate y aderezo marca <span>El Bule</span></h2>
-			<a id="producto1v" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto1v" class="agregarcarrito" href="agregarcarrito.php?id_producto=20"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-v2" class="text-center">La mejor hamburguesa Tex-Mex del norte del pais: <span>PapasFrancesas</span>, es traida para los paladares mas atrevidos del picante y los sabores del norte del pais. Unica en el estado de Guanajuato.</h2>
-			<a id="producto2v" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto2v" class="agregarcarrito" href="agregarcarrito.php?id_producto=21"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-v3" class="text-center"><span>GuacamoleBule</span>. Una estructura de 3 pisos que rompera tu sentido del gusto: cebolla, tomate, aderezos y champiñones seran los cimientos de este monumento de carne.</h2>
-			<a id="producto3v" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto3v" class="agregarcarrito" href="agregarcarrito.php?id_producto=22"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-v4" class="text-center">Porque lo verde siempre es bueno, <span>NachosLaFiera</span> una combinación de pollo y carne en perfecta armonia con vegetales frescos. Garantia <span>El Bule</span>.</h2>
-			<a id="producto4v" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto4v" class="agregarcarrito" href="agregarcarrito.php?id_producto=23"><button class="center-block">Agregar a mi orden</button></a>
 			<h2 id="ingredientes-v5" class="text-center"><span>EnsaladaHouse</span> una receta original de El Bule cuenta con los mejoresv: Adereso, carne suprema, lechuga, tomate, cebolla e ingredientes propios de la marca.</h2>
-			<a id="producto5v" class="agregarcarrito" href="log_usuario.php"><button class="center-block">Agregar a mi orden</button></a>
+			<a id="producto5v" class="agregarcarrito" href="agregarcarrito.php?id_producto=24"><button class="center-block">Agregar a mi orden</button></a>
 		</div>
 		<div class="col-xs-6">
 			<img id="img-bule-v0" class="img-responsive center-block" src="../img/varios-0.jpg">

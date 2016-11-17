@@ -40,19 +40,19 @@
         <div id="sello" class="col-xs-2">
           <img class="img-responsive" src="img/sello.png">
         </div>
-        <div class="menu-item col-xs-2">
+        <div id="menu-novedades" class="menu-item col-xs-2">
         <a href="#"><p>Novedades</p></a>
         </div>
-        <div class="menu-item col-xs-2">
+        <div id="menu-lacocina" class="menu-item col-xs-2">
         <a href="#"><p>La cocina</p></a>
         </div>
-        <div class="menu-item col-xs-2">
+        <div id="menu-menu" class="menu-item col-xs-2">
         <a href="php/menu.php"><p>Menu</p></a>
         </div>
-        <div class="menu-item col-xs-2">
+        <div id="menu-ordenaronline" class="menu-item col-xs-2">
         <a href="php/log_usuario.php"><p>Ordenar online</p></a>
         </div>
-        <div class="menu-item col-xs-2">
+        <div id="menu-contacto" class="menu-item col-xs-2">
         <a href="#"><p>Contacto</p></a>
         </div>
       </div>
@@ -128,7 +128,7 @@
         <h2 class="text-center">mas vendida</h2>
         <h2 class="text-center producto">BuleDeep</h2>
         <p class="text-center hidden-sm">Hamburguesa que combina los mejores ingredientes unicos de la fabrica de <span>ElBule, reconocidos por su frescura y originalidad.</span></p>
-        <button type="button" class="btn btn-default center-block">Menu</button>
+        <a href="php/menu.php#nuevo-titulo"><button type="button" class="btn btn-default center-block">Menu</button></a>
       </div>
       <div id="nuevo-2" class="col-xs-12 col-sm-6 col-md-6">
         <img class="img-responsive hidden-xs" src="img/nuevo-1-1.jpeg" alt="nuevo-1">
@@ -143,7 +143,7 @@
         <h2 class="text-center">platillos vegetarianos?</h2>
         <h2 class="text-center producto">BuleGreen</h2>
         <p class="text-center hidden-sm">Hamburguesa que combina los mejores ingredientes unicos de la fabrica de ElBule, reconocidos por su frescura y originalidad.</p>
-        <button type="button" class="btn btn-default center-block">Menu</button>
+        <a href="php/menu.php#nuevo-titulo"><button type="button" class="btn btn-default center-block">Menu</button></a>
       </div>
     </div>
     <div class="row nuevo-3">
@@ -152,7 +152,7 @@
         <h2 class="text-center">deliciosas papas!</h2>
         <h2 class="text-center producto">Papas Bule</h2>
         <p class="text-center hidden-sm">Hamburguesa que combina los mejores ingredientes unicos de la fabrica de <span>ElBule, reconocidos por su frescura y originalidad.</span></p>
-        <button type="button" class="btn btn-default center-block">Menu</button>
+        <a href="php/menu.php#nuevo-titulo"><button type="button" class="btn btn-default center-block">Menu</button></a>
       </div>
       <div id="nuevo-6" class="col-xs-12 col-sm-6 col-md-6">
         <img class="img-responsive hidden-xs" src="img/nuevo-2-2.jpg" alt="nuevi-1">

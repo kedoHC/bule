@@ -53,6 +53,23 @@ if(mysqli_num_rows($resultado)){
 		if(password_verify($contra, $fila["contra"])){
 			session_start();
 			$_SESSION["session-usuario"] = 1;
+			$_SESSION["id_usuario"] = $fila["id_usuario"];
+			$_SESSION["nombre_usuario"] = $fila["nombre"];
+			$_SESSION["direccion_usuario"] = $fila["direccion"];
+			$_SESSION["codigo_postal"] = $fila["codigo_postal"];
+			$_SESSION["telefono"] = $fila["telefono"];
+
+			$id_usuario = $_SESSION["id_usuario"];
+			$peticion_registro = "INSERT INTO registro (id_usuario, Totalpago) VALUES ('$id_usuario', 0)";
+			$resultado_registro = mysqli_query($conexion, $peticion_registro);
+			$peticion_id_pedido = "SELECT id_registro FROM registro WHERE id_usuario = '$id_usuario' ";
+			$resultado_id_pedido = mysqli_query($conexion, $peticion_id_pedido);
+
+			while($fila_id_pedido = mysqli_fetch_array($resultado_id_pedido)){
+				$_SESSION["id_registro"] = $fila_id_pedido["id_registro"];
+			}
+			$_SESSION["num_productos"] = 0;
+			$_SESSION["cont_productos"] = 0;
 			?>
 			<script type="text/javascript">
 				swal({
@@ -64,7 +81,7 @@ if(mysqli_num_rows($resultado)){
 					 },
 					function (confirmado) {
 						if(confirmado){
-							window.location.href = 'pedido_online.php';
+							window.location.href = 'menu_user.php';
 					}
 					});
 			</script>

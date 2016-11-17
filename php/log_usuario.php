@@ -6,21 +6,21 @@
     <div class="container">
       <div class="row">
         <div id="sello" class="col-xs-2">
-          <img class="img-responsive" src="../img/sello.png">
+          <a href="index.php"><img class="img-responsive" src="../img/sello.png"></a>
         </div>
-        <div class="menu-item col-xs-2">
-        <a href="#"><p>Novedades</p></a>
+        <div id="menu-novedades" class="menu-item col-xs-2">
+        <a href="../index.php#nuevo-titulo"><p>Novedades</p></a>
         </div>
-        <div class="menu-item col-xs-2">
-        <a href="#"><p>La cocina</p></a>
+        <div id="menu-lacocina" class="menu-item col-xs-2">
+        <a href="../index.php#la-cocina-titulo"><p>La cocina</p></a>
         </div>
-        <div class="menu-item col-xs-2">
-        <a href="#"><p>Menu</p></a>
+        <div id="menu-menu" class="menu-item col-xs-2">
+        <a href="menu.php#nuevo-titulo"><p>Menu</p></a>
         </div>
-        <div class="menu-item col-xs-2">
-        <a href="#"><p>Ordenar online</p></a>
+        <div id="menu-ordenaronline" class="menu-item col-xs-2">
+        <a href="log_usuario.php"><p>Ordenar online</p></a>
         </div>
-        <div class="menu-item col-xs-2">
+        <div id="menu-contacto" class="menu-item col-xs-2">
         <a href="#"><p>Contacto</p></a>
         </div>
       </div>

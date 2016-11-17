@@ -333,6 +333,10 @@ a:link{
 #contenedor-varios .nombre-producto:hover{
 	border-bottom: 5px solid #215A9E;
 }
+.label-nuevo{
+	-webkit-animation-iteration-count: infinite;
+  		-moz-animation-iteration-count: infinite;
+}
 #ingredientes span{
 	color: #ef4135;
 	font-family: 'Great Vibes', cursive;
